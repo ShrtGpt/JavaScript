@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+<script type="text/javascript">
+    var d = new Date();
+    d.setFullYear(2020, 11, 3);
+    document.write(d);
+    document.write("<br>");
+
+    // var d = new Date(2019, 11, 5); //11 -> December // YYYYMMDD
+    var dateObj = new Date();
+    var month = dateObj.getUTCMonth() + 1;
+    var day = dateObj.getUTCDate();
+    var year = dateObj.getUTCFullYear();
+
+
+    document.write(year + '-' + month + '-' + day);
+    document.write("<br>");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <button onclick="clearInterval(clock)"> Click Me ! </button><br>
+    <button onclick="clearInterval(d)"> Click Me ! </button><br>
+    <p id="showclock"> </p>
+
+<!-- dynamic clock
+<script type="text/javascript">
+    var clock = setInterval(clocktiming , 1000)
+
+    function clocktiming() {
+        var d = new Date();
+        var t = d.toLocaleTimeString();
+        document.getElementById('showclock').innerHTML = t;
+    }
+    
+</script>
+--> 
+
+
+<script type="text/javascript">
+    var d = setTimeout(showalert, 3000);
+
+    function showalert(){
+        alert("Hello World!");
+    }
+
+
+</script>
+
+</body>
+</html> 

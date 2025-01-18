@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="text/css" href="style.css">
+</head>
+
+<body>
+    <!--
+    <h1><span id="d">D: Document</span> <span id="o">O: object</span> <span id="m">M: Model </span></h1>
+    <h2> When a web page is loaded, the browser creates a Document Object Model of the page.Acc. to w3c everything is a Node </h2>
+    <p> document are modeled using objects, Element and attributes in our page is an Object</p>
+    <img src="htmltree.gif" width="500" height="400" style="margin:auto; display: block;">
+    <a href="https://github.com/ShrtGpt">Shruti Gupta
+    </a>
+    -->
+    <h1 id="changescss">Please eat food</h1>
+    <h1 id="changecss">Testing setAttributes()</h1>
+    <p id="Thapa"> Thapa </p>
+    <p class = "Welcome"> Technical </p>
+    <p class = "Welcome"> Technical 1 </p>
+    <p class = "Welcome"> Technical 2 </p>
+    <ul>
+        <li>Like</li>
+        <li> Share </li>
+        <li> Subscribe </li>
+    </ul>
+
+    <!-- how to access elements by id -->
+    <script type="text/javascript">
+        var a = document.getElementById("Thapa").innerHTML;
+        document.write(a);
+    </script>
+
+    <!-- how to access elements by Class -->
+    <script type="text/javascript">
+        var b = document.getElementsByClassName("Welcome")[0].innerHTML;
+        document.write("<br>");
+        document.write(b);
+    </script>
+
+    <!-- how to access elements by TagName -->
+    <script type="text/javascript">
+        var tag = document.getElementsByTagName("p");
+        document.write("<br>");
+        document.write(tag);
+        console.log(tag);
+    </script>
+
+    <!-- how to access first elements -->
+    <script type="text/javascript">
+        var first = document.querySelector("p").innerHTML;
+        document.write("<br>");
+        document.write(first);
+    </script>
+
+    <!-- how to access children of a body -->
+    <script type="text/javascript">
+        var child = document.body.children;
+        console.log(child);
+
+        // add a new child in a body
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("This is a new para.");
+        para.appendChild(textNode);
+        console.log(para);
+
+        document.body.appendChild(para);
+
+        //access first and last child
+        var list = document.querySelector('ul');
+        console.log(list.firstChild);
+
+        console.log(list.lastChild);
+
+        //siblings
+        var firstsiblings = Thapa.nextElementSibling;
+        console.log(firstsiblings);
+
+        //parents
+        console.log(list.parentNode);
+
+    </script>
+
+    <script type="text/javascript">
+        document.getElementById('changescss').style.color = "red";
+        document.getElementById('changecss').setAttribute("style",
+            "color: red; background-color: black; text-align: center;height: 100px; ");
+    </script>
+
+
+</body>
+</html>

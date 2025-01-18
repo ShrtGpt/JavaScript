@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div id="divone"> Welcome To All: This is my JavaScript Practice.
+        <button onclick="myfunc('divone')" type="button">DivOne</button>
+    </div>
+    <div id="divtwo">I am learning to print the page here.
+        <button onclick="myfunc('divtwo')" type="button">DivTwo</button>
+    </div>
+    <div id="divthree">The whole page can be printed with window.print property
+        <button onclick="myfunc('divthree')" type="button">DivThree</button>
+    </div>
+    <button onclick="mywholepage()" type="button">Print the whole button</button>
+
+<script type="text/javascript">
+    function mywholepage() {
+        // Print the whole page
+        window.print(); //= document.body.innerHTML
+    }
+
+    function myfunc(paravalue) {
+        var backup = document.body.innerHTML;
+        var divcontent = document.getElementById(paravalue).innerHTML;
+        document.body.innerHTML = divcontent;
+        window.print();
+        document.body.innerHTML = backup; // restore the original page
+
+    }
+
+</script>
+
+</body>
+</html>
