@@ -1,0 +1,20 @@
+body{
+    background-image:url('https://media.istockphoto.com/id/917525288/photo/abacus-with-heats.jpg?s=612x612&w=0&k=20&c=i3VELGSch83y8R98CF34p9QZ0pCRZi9_MsbTcAGAqj4=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 95%;
+    height: 100lvh;
+    position: relative;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.card-header{
+    color: white;
+}

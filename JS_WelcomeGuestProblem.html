@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+<script type="text/javascript">
+    var guestlist = ['aman','bobby','Charu','Denice', 'Elvise', 'Funky','Goerge', 'Harsh', 'Imily','Joker'];
+
+    var name = prompt("What's your name?");
+    var checkname = guestlist.includes(name);
+    if (checkname == true) {
+        alert("Welcome " + name + " to our party!");
+    }else{
+        alert("Sorry, " + name + " is not invited to our party.");
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+<script type="text/javascript">
+    let mouseXStartPoint = 300;
+    let mouseXEndPoint = width.innerwidth-300;
+    let currentXPosition = 0;
+    let fracXValue = 0;
+
+    let range = mouseXEndPoint - mouseXStartPoint;
+
+    const mouseMove = (event) => {
+        // console.log('X value = ${event.clientX}');
+        currentXposition = event.clientX;
+        fracXValue = (currentXPosition / mouseXEndPoint);
+        console.log(fracXValue);
+    }
+
+    window.addEventListener("mousemove", mouseMove);
+
+    
+</script>
+
+</body>
+</html>
