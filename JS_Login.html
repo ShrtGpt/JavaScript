@@ -1,0 +1,30 @@
+<script>
+    let database = [{
+        username: 'vinod',
+        password: 'xyz'
+    }];
+    let status = [
+        {
+            name: 'ShrutiGupta',
+            status: 'Student'
+        },
+        {
+            name: 'Ramesh',
+            status: 'Engineer'
+        }
+    ];
+    const username = prompt("Enter your username");
+    const password = prompt("Enter your password");
+
+    const login = (user, pass) => {
+        if(user === database[0].username && pass === database[0].password){
+            console.log(status);
+            for (let value of status){
+                console.log(value);
+            }
+        }
+    }
+
+    login(username, password);
+
+</script>

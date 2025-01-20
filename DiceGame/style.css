@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Acme', sans-serif;
+}
+
+.container{
+    width: 70%;
+    margin:auto;
+    text-align:center;
+}
+.dice{
+    text-align: center;
+    display:inline-block;
+}
+h1{
+    margin: 30px;
+    text-shadow: 5px 0 white;
+    font-size: 6rem;
+    color: #f6b93b;
+}
+body{
+    background-color: blue;
+}
+p{
+    font-size: 2rem;
+    color: #00b894;
+    text-shadow: 1px 1px white;
+}
+button{
+    padding: 10px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
+img{
+    width: 75%;
+}
