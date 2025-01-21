@@ -1,0 +1,39 @@
+<script>
+    let a = 1;
+    let b = "Mango";
+    let c=true;
+    let d;
+    let e = "";
+    let f = null;
+
+    console.log(typeof a); // Outputs: number
+    console.log(typeof b); // Outputs: string
+    console.log(typeof c); // Outputs: boolean
+    console.log(typeof d); // Outputs: undefined
+    console.log(typeof e); // Outputs: string
+    console.log(typeof f); // Outputs: object (null is an object in JavaScript)
+
+    //non primitive types (object)
+    const fruits = {
+        name: "Mango",
+        color: "Yellow",
+        quantity: 5,
+    }
+    fruits.state = "Gujarat";
+
+    console.log(fruits);
+
+    console.log(typeof({})); //{}-> Object
+
+    console.log(typeof([])); //{}-> Array
+
+    console.log(typeof(function() {})); //{}-> Function
+
+    const check = () =>{
+        console.log("Checking");
+    }
+
+    check.letshavefun = "alright I am an object too";
+
+    console.log(check.letshavefun);
+</script>

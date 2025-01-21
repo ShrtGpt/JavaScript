@@ -1,0 +1,32 @@
+<script>
+    //Pass By Value
+
+    let a = 5;
+    let b = a;
+
+    b = b+5 ;
+
+    console.log(a);
+    console.log(b);
+
+    //Pass By Reference
+    //Example 1
+
+    const obj1 = {
+        user : "xya",
+        age : 25,
+    }
+    const obj2 = obj1;
+    obj2.age = obj2.age + 5; 
+
+    console.log(obj1);
+    console.log(obj2);
+
+    //Example 2
+    const arr1 = [1,2,3,4];
+    const arr2 = arr1;
+    arr2.push(5);  //This modifies both arrays as they are pointing to the same reference.
+    console.log(arr1);
+    console.log(arr2);
+
+</script>

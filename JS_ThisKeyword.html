@@ -1,0 +1,28 @@
+<script>
+    //console.log(this); 
+
+    //function sum(){
+       // var add = 2+2;
+        //console.log("sum of the two no. is "+ add);
+        //console.log(this);
+    //}
+
+    const xyz = {
+        name : "Shruti Gupta",
+        qualif: "BTech",
+        sum: function(){
+            var add = 2+2;
+            console.log("sum of the two no. is "+ add);
+            console.log(this);
+
+            function child(){
+                var name = "Aryan";
+                console.log("Child method name: + "+name);
+                console.log(this);
+            }
+            child();
+        }
+    }
+
+    xyz.sum();
+</script>

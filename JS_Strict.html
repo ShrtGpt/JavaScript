@@ -1,0 +1,26 @@
+<script>
+    "use strict";
+    function sum(a,b){
+        //console.log(add);
+        add = a+b; 
+        //so write var add = a+b;
+        console.log(add);
+    }
+
+    sum(10, 10);
+</script>
+
+<!--
+List of features(non-exhaustive)
+Disallows global variables. (Catches missing var declarations and typos in variable names)
+Silent failing assignments will throw error in strict mode (assigning NaN = 5;)
+Attempts to delete undeletable properties - will throw error (delte Object.prototype)
+Requires all property names in an object literal to be unique (var x= {x1:"1", x1:"2"})
+Function parameter names must be unique (function sum (x,x) {...})
+Forbids octal syntax (var x = 023; some devs assume wrongly that a preceding ero does nothing to change the number.)
+FOrbids the with keyword
+eval deleting plain names (delte x;)
+Forbids binding or assignment of the names eval and arguments in any form
+Strict mode does not alias properties of the arguments object with formal parameters. (i.e. in function um (a,b) { return arguments[0] + b;} This works because arguments callee is not supported)
+
+-->
