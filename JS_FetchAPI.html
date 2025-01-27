@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <p id="apiindia">APIData</p>
+<script>
+    fetch('https://api.rootnet.in/covid19-in/stats/history').then((apidata) =>{
+        //console.log(apidata);
+        return apidata.json();
+    }).then((actualdata)=>{
+        console.log(actualdata);
+
+        const mydata = actualdata.data[13].summary;
+        //document.getElementById('apiindia').innerHTML = `The name of the area is ${mydata.regional.loc}. The total confirmed cases in India are ${mydata.regional.confirmedCasesIndian}, and total deaths are ${mydata.regional.deaths}.` ;
+        //console.log(actualdata.data[101].summary.total);
+    }).catch((error)=>{
+        console.log('Error occurred:', error);
+    })
+</script>
+</body>
+</html>

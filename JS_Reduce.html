@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+<script type="text/javascript">
+    /*
+    let arr = [8,2,3,4,5,6];
+    sum = 28
+    average = 4
+    product = 30 
+
+    let sum = arr.reduce((accum, curr) =>{
+        debugger;
+        return accum + curr;
+    },50)
+
+    console.log(sum);
+    */
+    
+    let arr = [8,2,3,4,5,6];
+    let avg = arr.reduce((accum, curval, index, arr) =>{
+        debugger;
+        let total = accum += curval;
+        if (index === array.length - 1){
+            return total/array.length;
+        }
+        return total
+    });
+    console.log(avg);
+
+
+    const arr2 = [
+        ['zone_1', 'zone_2'],
+        ['zone_3', 'zone_4'],
+        ['zone_5', 'zone_6'],
+        ['zone_7', 'zone_8'],
+        ['zone_9', 'zone_10']
+    ];
+    /*
+    const flatArr = arr.reduce((accum, curval)=>{
+        return accum.concat(curval);
+    })
+    console.log(flatArr[0]);
+    */
+    
+    console.log(arr.flat(Infinity));
+</script>
+
+</body>
+</html>

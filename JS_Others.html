@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+    <h1>Welcome to JavaScript Tutorial</h1>
+    <p id="myData">What is your lucky number</p>
+    <button onclick="startTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop timer</button>
+
+<script type="text/javascript">
+    let myData = document.querySelector('#myData');
+    let num = 0;
+    let timeRef;
+    function startTimer() {
+        myData.innerHTML = `loading data....`;
+        timeRef = setInterval( () => {
+            myData.innerHTML = 'I am guessing your lucky number. Is it ${num}';
+            num++;
+        }, 1000)
+    }
+    /*
+    function welcome(){
+        myData.innerHTML = `Hello, JavaScript!`;
+    }
+
+    function startTimer(){
+        setTimeout(welcome, 1000)
+    }*/
+
+   function stopTimer(){
+    clearInterval(startTimer);
+    myData.innerHTML = 'Timer stopped';
+   }
+</script>
+
+</body>
+</html>
